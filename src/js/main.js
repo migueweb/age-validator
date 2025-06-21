@@ -17,6 +17,8 @@ $form.addEventListener('submit', (e) => {
         message = 'Error: Por favor, ingresa una edad válida en números.'
         error = true
     }
+    
+    // update userAge input parsed
     if (!isNaN(userAge)) {
         $userAge.value = userAge
     }
