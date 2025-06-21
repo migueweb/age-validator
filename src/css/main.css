@@ -37,6 +37,7 @@ body {
 
 /* Header */
 .header {
+    margin-top: 2rem;
     width: 100%;
     text-align: 100%;
     display: flex;
@@ -118,6 +119,7 @@ p {
 }
 #feedbackWrapper {
     width: 100%;
+    min-height: 8rem;
     padding: .1rem;
 }
 .error {
@@ -137,9 +139,13 @@ p {
 
 /* Tablet styles */
 @media  screen and (min-width: 768px){
+    .header {
+        margin-top: 0;
+    }
     .wrapper {
         width: 70%;
         height: 100vh;
+        gap: 3rem;
     }
     form {
         grid-template-columns: repeat(2,6fr);
